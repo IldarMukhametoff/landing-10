@@ -22,6 +22,11 @@ body{
 			justify-content: space-between;
 		}
 	}
+	&__social-link{
+		margin: 0 20px 0 0;
+		font-size: 18px;
+		color:#fff;
+	}
 	&__mail{
 		color: #fff;
 		font-weight: 400;
@@ -594,7 +599,10 @@ body{
 	}
 	&__text-block{
 		flex: 1 0 230px;
-		position:relative
+		position:relative;
+		display:flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 	&__title-block{
 		margin: 0 0 92px 0;
@@ -624,6 +632,7 @@ body{
 		}
 		.slick-track{
 			display: flex;
+			align-items: flex-start;
 		}
 		.slick-arrow{
 			position: absolute;
@@ -676,9 +685,8 @@ body{
 			}
 		}
 		&__text-block{
-			display: flex;
 			align-items: center;
-			flex-direction: column;
+
 		}
 		&__buttons{
 			align-self: flex-end;
@@ -807,6 +815,17 @@ body{
 		@media (max-width:1000px) {
 			flex: 0 1 auto;
 			margin: 0 0 20px;
+		}
+	}
+	&__title{
+		margin: 0 0 50px;
+	}
+	&__social-link{
+		margin: 0 30px 0 0;
+		font-size: 40px;
+		color: #fff;
+		&:last-child{
+			margin: 0;
 		}
 	}
 	&__bottom{

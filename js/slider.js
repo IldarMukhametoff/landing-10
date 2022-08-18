@@ -6,5 +6,6 @@ $(document).ready(function(){
 	$('.testimonials__slider-block').slick({
 		slidesToShow:1,
 		fade: true,
+		adaptiveHeight:true,
 	}); 
 });
